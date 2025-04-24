@@ -1,0 +1,37 @@
+{
+  "name": "oceans-seas.geojson",
+  "version": "0.1.0",
+  "main": "index.js",
+  "type": "module",
+  "files": [
+    "index.js",
+    "topojson.js"
+  ],
+  "scripts": {
+    "build:geojson": "mapshaper World_Seas_IHO_v3/World_Seas_IHO_v3.shp -proj wgs84 -clean -filter-fields NAME,area -o precision=0.00001 oceans-seas-full.geojson",
+    "simplify": "mapshaper oceans-seas-full.geojson -simplify 0.5% -o oceans-seas.geojson",
+    "convert": "mapshaper oceans-seas.geojson -o oceans-seas.topojson",
+    "build": "npm run build:geojson && npm run simplify && npm run convert"
+  },
+  "keywords": [
+    "geojson",
+    "topojson",
+    "oceans",
+    "seas",
+    "marine",
+    "boundaries",
+    "geography",
+    "maps",
+    "marine-regions"
+  ],
+  "author": "Alvin Bryan",
+  "license": "MIT",
+  "description": "The world's oceans and seas boundaries in GeoJSON and TopoJSON formats.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvinometric/oceans-seas.geojson.git"
+  },
+  "devDependencies": {
+    "mapshaper": "^0.6.102"
+  }
+}
