@@ -11,8 +11,8 @@
   ],
   "scripts": {
     "build:geojson": "mapshaper World_Seas_IHO_v3/World_Seas_IHO_v3.shp -proj wgs84 -clean -filter-fields NAME,area -o precision=0.00001 oceans-seas-full.geojson",
-    "simplify": "mapshaper oceans-seas-full.geojson -simplify 0.5% -o oceans-seas.geojson",
-    "convert": "mapshaper oceans-seas.geojson -o oceans-seas.topojson",
+    "simplify": "mapshaper oceans-seas-full.geojson -simplify 0.5% -o oceans-seas.geo.json",
+    "convert": "mapshaper oceans-seas.geo.json -o format=topojson oceans-seas.topo.json",
     "build": "npm run build:geojson && npm run simplify && npm run convert"
   },
   "keywords": [
