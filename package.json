@@ -4,8 +4,10 @@
   "main": "index.js",
   "type": "module",
   "files": [
-    "index.js",
-    "topojson.js"
+    "oceans-seas.geojson",
+    "oceans-seas.topojson",
+    "topojson.js",
+    "index.js"
   ],
   "scripts": {
     "build:geojson": "mapshaper World_Seas_IHO_v3/World_Seas_IHO_v3.shp -proj wgs84 -clean -filter-fields NAME,area -o precision=0.00001 oceans-seas-full.geojson",
