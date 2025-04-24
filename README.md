@@ -1,5 +1,10 @@
 # Oceans & Seas GeoJSON/TopoJSON
 
+[![Downloads](https://img.shields.io/npm/dm/oceans-seas.geojson.svg?style=flat-square)](https://www.npmjs.com/package/oceans-seas.geojson)
+[![Size](https://img.shields.io/bundlephobia/minzip/oceans-seas.geojson.svg?style=flat-square)](https://bundlephobia.com/result?p=oceans-seas.geojson)
+[![version](https://img.shields.io/npm/v/oceans-seas.geojson.svg?style=flat-square)](https://www.npmjs.com/package/oceans-seas.geojson)
+[![MIT License](https://img.shields.io/npm/l/oceans-seas.geojson.svg?style=flat-square)](https://github.com/alvinometric/oceans-seas.geojson/blob/main/LICENSE)
+
 The world's oceans and seas boundaries in GeoJSON and TopoJSON formats.
 
 ## Data Sources
