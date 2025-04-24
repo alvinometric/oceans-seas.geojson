@@ -4,8 +4,8 @@
   "main": "index.js",
   "type": "module",
   "files": [
-    "oceans-seas.geojson",
-    "oceans-seas.topojson",
+    "oceans-seas.geo.json",
+    "oceans-seas.topo.json",
     "topojson.js",
     "index.js"
   ],
