@@ -1,1 +1,1 @@
-export { default } from "./oceans-seas.geo.json" assert { type: "json" };
+export { default } from "./oceans-seas.geo.json" with { type: "json" };
